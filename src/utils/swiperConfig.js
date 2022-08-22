@@ -1,18 +1,18 @@
-import Swiper, { Navigation } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/navigation';
+import { Navigation } from 'swiper';
 
-
-function displyTotalSLide(swiper) {
+export function displyTotalSLide(swiper) {
 
     var totalSlide = document.getElementById('totalSlide');
 
     totalSlide.innerHTML = (swiper.realIndex + 1) + '/' + this.customTotalSlide + ' screens';
 
 }
-
-
-const swiper = new Swiper('.swiper', {
+export const beforeInit = function () {
+    let numOfSlides = (this.wrapperEl.querySelectorAll(".swiper-slide").length - 2) / 2;
+    this.customTotalSlide = numOfSlides;
+}
+export const SwiperProp =
+{
 
     loop: true,
     modules: [Navigation],
@@ -41,13 +41,7 @@ const swiper = new Swiper('.swiper', {
             slidesPerView: 3,
             spaceBetween: 30,
         }
-    },
-    on: {
-        beforeInit: function () {
-            let numOfSlides = this.wrapperEl.querySelectorAll(".swiper-slide").length;
-            this.customTotalSlide = numOfSlides;
-        }
     }
-});
+}
 
-swiper.on('slideChange', displyTotalSLide)
+

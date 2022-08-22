@@ -7,4 +7,5 @@ import "./src/css/normalize.css"
 //custom CSS styles
 import "./src/css/style.css"
 import "./src/styles/global.css"
-import './src/js/script'
+import 'swiper/css';
+import 'swiper/css/navigation';

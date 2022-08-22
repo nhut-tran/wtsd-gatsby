@@ -1,8 +1,8 @@
+/*****
+base 
+*****/
 body {
-	/* @apply bg-background text-foreground; */
 	font-family: 'Open sans', sans-serif;
-
-
 }
 
 .container {
@@ -15,8 +15,6 @@ body {
 .hero {
 	@apply max-w-[100%];
 }
-
-
 
 .connect {
 	@apply max-w-[100%] lg:max-w-[900px] xl:max-w-[1006px];
@@ -68,9 +66,6 @@ h1, h2, h4 {
     background-color: #1565D8;
 }
 
-
-/*------connect section------*/
-
 .connect__description {
     color: #5A7184
 }
@@ -93,6 +88,29 @@ h1, h2, h4 {
 .tips__text-box {
     @apply px-[22px] pb-[40px] md:pl-[24px] md:pr-[20px] md:pb-[36px] md:mb-[25px] flex flex-col items-center text-center justify-evenly sm:text-left;
 }
+#totalSlide {
+    font-family: HK Grotesk;
+    color: #183B56;
+}
+.suggestion {
+    height: auto;
+}
+
+.track-health__stick {
+    background-color: #344563;
+}
+
+.button-link {
+    color: #1565D8
+}
+.button-link svg {
+    display: inline;
+}
+
+
+/*****
+swiper custom 
+*****/
 .swiper-button-prevs,
 .swiper-button-nexts {
     display: flex;
@@ -136,11 +154,12 @@ h1, h2, h4 {
         height: 429px !important; 
     }
 }
+
 @media (min-width: 1280px) {
     .swiper-slide {
         
-        width: 255px !important; 
-        height: 487px !important; 
+        width: 254px !important; 
+        height: 486px !important; 
     }
 }
 .phone {
@@ -161,23 +180,6 @@ h1, h2, h4 {
     }
 }
 
-#totalSlide {
-    font-family: HK Grotesk;
-    color: #183B56;
-}
-.suggestion {
-    height: auto;
-}
-
-.track-health__stick {
-    background-color: #344563;
-}
-
-.button-link {
-    color: #1565D8
-}
-
-
 
 .slider-container {
     background-image: linear-gradient(to right, #FFFF 50%,  #1566d834 50% 100%);
@@ -193,8 +195,11 @@ h1, h2, h4 {
     }
 }
 
+/***
+Gravity form
+***/
 
-.contact-form .gform_heading {
+.contact-form h2 {
     @apply text-[28px] leading-9 font-bold text-left mb-6 md:text-5xl md:leading-[60px] md:mb-[33px] lg:leading-[68px] lg:text-[56px] lg:max-w-[474px] lg:mr-[111px]; 
     color: #183B56;
     flex-grow: 0;
@@ -207,23 +212,23 @@ h1, h2, h4 {
     border: 1px solid #C3CAD9;
     border-radius: 8px;
     text-indent: 48px;
-    @apply md:mr-[17px] h-[48px] md:h-[56px];
+    @apply md:mr-[17px] h-[48px] md:h-[56px] w-full mb-4 md:mb-6;
     
 }
 .contact-form input[type=text]:focus,
 .contact-form input[type=email]:focus
  {
-    outline:  1px solid #C3CAD9;
+    outline: 1px solid #C3CAD9;
     transition: all 1s;
     
 }
 .contact-form input[type=text] {
-    background-image: url("/wp-content/uploads/2022/08/user.png");
+    background-image: url("../../content/assets/img/user.png");
     background-repeat: no-repeat;
     background-position: 18px 50%;
 }
 .contact-form input[type=email] {
-    background-image: url("/wp-content/uploads/2022/08/envelope.png");
+    background-image: url("../../content/assets/img/envelope.png");
     background-repeat: no-repeat;
     background-position: 18px 50%;
 }
@@ -248,13 +253,9 @@ h1, h2, h4 {
     font-size: 16px;
 }
 
-/* disable error message display from gravity form */
-.gform_validation_errors {
-    display: none;
-}
 
 @media (min-width: 1024px) {
-    .contact-form .gform_wrapper {
+    .contact-form  {
         display: flex;
     }
 }

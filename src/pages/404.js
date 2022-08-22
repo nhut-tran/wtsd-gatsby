@@ -2,11 +2,13 @@ import React from "react"
 import { graphql } from "gatsby"
 
 
-const NotFoundPage = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
+const NotFoundPage = () => {
 
   return (
-    <h1>Not Found</h1>
+    <div className="mx-auto w-[80%] h-[50vh] flex items-center justify-center flex-col">
+      <h2 className="text-6xl font-bold">Page Not Found</h2>
+      <a href='/' className="flex items-center justify-between text-3xl">Home page</a>
+    </div>
   )
 }
 
