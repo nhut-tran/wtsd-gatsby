@@ -1,0 +1,39 @@
+/**
+ * Custom `@font-face` rules
+ *
+ * These will be added immediately before Tailwind’s `base` layer.
+ */
+
+
+
+ @font-face {
+    font-family: 'HK Grotesk';
+    src: URL('../font/HKGrotesk-Regular.otf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'HK Grotesk';
+    src: URL('../font/HKGrotesk-Bold.otf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'HK Grotesk';
+    src: URL('../font/HKGrotesk-Medium.otf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'HK Grotesk';
+    src: URL('../font/HKGrotesk-ExtraBold.otf') format('truetype');
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'HK Grotesk';
+    src: URL('../font/HKGrotesk-Black.otf') format('truetype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Open sans';
+    src: URL('../font//OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+}

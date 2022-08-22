@@ -1,0 +1,261 @@
+body {
+	/* @apply bg-background text-foreground; */
+	font-family: 'Open sans', sans-serif;
+
+
+}
+
+.container {
+	background-color: #FFFFFF;
+	@apply mx-auto;
+	max-width: 100% !important;
+}
+
+
+.hero {
+	@apply max-w-[100%];
+}
+
+
+
+.connect {
+	@apply max-w-[100%] lg:max-w-[900px] xl:max-w-[1006px];
+	margin: auto;
+}
+
+.contact {
+	@apply pl-[30px] pr-[51px] md:pl-[180px] md:pr-[181px] xl:pl-[150px] xl:pr-[315px];
+}
+
+
+h1, h2, h4 {
+	font-family: HK Grotesk;
+	color: #183B56;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.hero__sub-title {
+    color: #183B56;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.hero__stick {
+    background-color: #344563;
+}
+
+
+.hero__description {
+    color: #5A7184
+}
+
+
+.small-text {
+    @apply text-base leading-7 tracking-normal font-normal sm:text-lg sm:leading-8;
+}
+
+.btn {
+    border-radius: 8px;
+    color: #FFFF;
+
+}
+.btn:hover {
+    background-color: #1590d8;
+    transition: all 0.2s;
+}
+.btn--action {
+    background-color: #1565D8;
+}
+
+
+/*------connect section------*/
+
+.connect__description {
+    color: #5A7184
+}
+
+.text-box {
+    border: 2px solid rgba(180, 187, 197, 0.3);
+    border-radius: 4px;
+
+}
+
+.connect__dashboard img {
+    width: 100%;
+
+}
+
+.text-box__title {
+    color: #1565D8;
+    
+}
+.tips__text-box {
+    @apply px-[22px] pb-[40px] md:pl-[24px] md:pr-[20px] md:pb-[36px] md:mb-[25px] flex flex-col items-center text-center justify-evenly sm:text-left;
+}
+.swiper-button-prevs,
+.swiper-button-nexts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 56px;
+    width: 54px;
+    border-radius: 200px;
+    color: #959EAD;
+    border: 2px solid #B3BAC5;
+   
+}
+
+.swiper-button-prevs:hover,
+.swiper-button-nexts:hover {
+    width: 54px;
+    color: #183B56;
+    border: 2px solid #183B56;
+    transition: all 0.5s;
+}
+.swiper {
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+.slider-container {
+    flex-grow: 1;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 182px !important; 
+    height: 396px !important; 
+    overflow-y: hidden;
+}
+@media (min-width: 768px) {
+    .swiper-slide {
+        
+        width: 198px !important; 
+        height: 429px !important; 
+    }
+}
+@media (min-width: 1280px) {
+    .swiper-slide {
+        
+        width: 255px !important; 
+        height: 487px !important; 
+    }
+}
+.phone {
+   
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+    z-index: 1000;
+   
+}
+@media (min-width: 768px) {
+    .phone {
+      
+        top: 50%;
+        left: 0;
+        transform: translate(0%, -50%);
+       
+    }
+}
+
+#totalSlide {
+    font-family: HK Grotesk;
+    color: #183B56;
+}
+.suggestion {
+    height: auto;
+}
+
+.track-health__stick {
+    background-color: #344563;
+}
+
+.button-link {
+    color: #1565D8
+}
+
+
+
+.slider-container {
+    background-image: linear-gradient(to right, #FFFF 50%,  #1566d834 50% 100%);
+}
+@media (min-width: 640px) {
+    .slider-container {
+        background-image: linear-gradient(to right, #FFFF 15%,  #1566d834 15% 100%);
+    }
+}
+@media (min-width: 1208px) {
+    .slider-container {
+        background-image: linear-gradient(to right, #FFFF 18%,  #1566d834 18% 100%);
+    }
+}
+
+
+.contact-form .gform_heading {
+    @apply text-[28px] leading-9 font-bold text-left mb-6 md:text-5xl md:leading-[60px] md:mb-[33px] lg:leading-[68px] lg:text-[56px] lg:max-w-[474px] lg:mr-[111px]; 
+    color: #183B56;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.contact-form form {
+    @apply md:w-[390px]
+}
+.contact-form input {
+    border: 1px solid #C3CAD9;
+    border-radius: 8px;
+    text-indent: 48px;
+    @apply md:mr-[17px] h-[48px] md:h-[56px];
+    
+}
+.contact-form input[type=text]:focus,
+.contact-form input[type=email]:focus
+ {
+    outline:  1px solid #C3CAD9;
+    transition: all 1s;
+    
+}
+.contact-form input[type=text] {
+    background-image: url("/wp-content/uploads/2022/08/user.png");
+    background-repeat: no-repeat;
+    background-position: 18px 50%;
+}
+.contact-form input[type=email] {
+    background-image: url("/wp-content/uploads/2022/08/envelope.png");
+    background-repeat: no-repeat;
+    background-position: 18px 50%;
+}
+.contact-form input[type=submit] {
+    background-color: #1565D8;
+    border-radius: 8px;
+    color: #FFFF;
+    width: 150px;
+    height: 48px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-indent: 0;
+}
+.contact-form input[type=submit]:hover {
+    background-color: #1590d8;
+    transition: all 0.2s;
+}
+.contact-form input::placeholder {
+    font-family: Open Sans;
+    font-size: 16px;
+}
+
+/* disable error message display from gravity form */
+.gform_validation_errors {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .contact-form .gform_wrapper {
+        display: flex;
+    }
+}
+
